@@ -17,6 +17,7 @@ alias mv="mv -i"
 alias ls="ls --color"
 alias tmux="tmux -2"
 alias g="git"
+alias ..="cd ../"
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/tom/.zshrc'
