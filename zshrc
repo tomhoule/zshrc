@@ -11,12 +11,15 @@ source ~/.local_profile
 export EDITOR=vim
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
-bindkey -v
-bindkey -M viins jj vi-cmd-mode
+bindkey -e
+bindkey '^r' history-incremental-search-backward
+bindkey 'ä' kill-word
+bindkey 'æ' forward-word
+bindkey 'â' backward-word
 
 autoload -z edit-command-line
 zle -N edit-command-line
-bindkey -M vicmd v edit-command-line
+bindkey '^x^e' edit-command-line # like bash
 
 alias rm='rm -I'
 alias cp='cp -i'
@@ -24,8 +27,7 @@ alias mv='mv -i'
 alias ls='ls --color'
 alias grep='grep --colour'
 alias tmux='tmux -2'
-alias g='git'
-alias ..='cd ../'
+alias g=git
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
