@@ -29,6 +29,11 @@ alias grep='grep --colour'
 alias tmux='tmux -2'
 alias g=git
 
+# Start ssh-agent if not already started
+if [[ -z "${SSH_AGENT_PID+xxx}" ]];
+    then eval `ssh-agent` > /dev/null;
+fi
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
