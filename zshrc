@@ -6,10 +6,9 @@ SHARE_HISTORY=1
 HISTFILE=~/.histfile
 setopt share_history hist_ignore_dups
 
-source ~/.local_profile
-
 export EDITOR=vim
-export RUST_SRC_PATH=/usr/local/src/rust/src
+
+source ~/.local_profile
 
 bindkey -e
 bindkey '^r' history-incremental-search-backward
