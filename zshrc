@@ -12,9 +12,6 @@ source ~/.local_profile
 
 bindkey -e
 bindkey '^r' history-incremental-search-backward
-bindkey 'ä' kill-word
-bindkey 'æ' forward-word
-bindkey 'â' backward-word
 
 autoload -z edit-command-line
 zle -N edit-command-line
