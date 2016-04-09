@@ -24,6 +24,7 @@ alias ls='ls --color'
 alias grep='grep --colour'
 alias tmux='tmux -2'
 alias g=git
+alias please=sudo
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
