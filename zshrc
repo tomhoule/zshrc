@@ -6,7 +6,7 @@ SHARE_HISTORY=1
 HISTFILE=~/.histfile
 setopt share_history hist_ignore_dups
 
-EDITOR=nvim
+export EDITOR=nvim
 
 bindkey -e
 bindkey '^r' history-incremental-search-backward
