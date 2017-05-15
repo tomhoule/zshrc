@@ -15,6 +15,8 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line # like bash
 
+alias mpv="mpv --opengl-backend=wayland"
+
 alias e="nvim"
 alias v="nvim"
 alias vi="nvim"
@@ -36,6 +38,10 @@ alias reset="git reset"
 alias stash="git stash"
 alias st="git status"
 
+function pfo() {
+    git push -f origin `git rev-parse --abbrev-ref HEAD`
+}
+
 alias pr="hub pull-request"
 
 alias dc="docker-compose"
@@ -51,7 +57,6 @@ alias mv='mv -i'
 alias please=sudo
 alias rm='rm -I'
 alias status="git status"
-alias tmux='tmux'
 
 alias corgi=cargo
 alias vpn=expressvpn
@@ -71,4 +76,5 @@ export PATH=~/src/golang/bin:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/aur/fzf-extras/fzf-extras.sh ] && source ~/aur/fzf-extras/fzf-extras.sh
 [ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
+
 export GOPATH=~/src/golang
