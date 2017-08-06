@@ -58,6 +58,8 @@ alias please=sudo
 alias rm='rm -I'
 alias status="git status"
 
+alias open=xdg-open
+
 alias corgi=cargo
 alias vpn=expressvpn
 
@@ -70,6 +72,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH=~/.local/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=~/src/golang/bin:$PATH
 
@@ -78,3 +81,6 @@ export PATH=~/src/golang/bin:$PATH
 [ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
 
 export GOPATH=~/src/golang
+export PATH=$PATH:/home/tom/emsdk-portable:/home/tom/emsdk-portable/clang/fastcomp/build_incoming_64/bin:/home/tom/emsdk-portable/node/4.1.1_64bit/bin:/home/tom/emsdk-portable/emscripten/incoming
+
+source ~/aur/fzf-extras/fzf-extras.zsh
