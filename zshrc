@@ -59,6 +59,8 @@ alias please=sudo
 alias rm='rm -I'
 alias status="git status"
 
+alias open=xdg-open
+
 alias corgi=cargo
 alias nyan=yarn
 alias ayran=yarn
@@ -87,3 +89,6 @@ export GOPATH=~/src/golang
 export CHROME_BIN=`which chromium`
 
 export PATH=$PATH:~/.gem/ruby/2.4.0/bin
+export PATH=$PATH:/home/tom/emsdk-portable:/home/tom/emsdk-portable/clang/fastcomp/build_incoming_64/bin:/home/tom/emsdk-portable/node/4.1.1_64bit/bin:/home/tom/emsdk-portable/emscripten/incoming
+
+source ~/aur/fzf-extras/fzf-extras.zsh
