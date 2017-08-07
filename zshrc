@@ -37,6 +37,7 @@ alias rebase="git rebase"
 alias reset="git reset"
 alias stash="git stash"
 alias st="git status"
+alias ls=exa
 
 function pfo() {
     git push -f origin `git rev-parse --abbrev-ref HEAD`
@@ -59,6 +60,10 @@ alias rm='rm -I'
 alias status="git status"
 
 alias corgi=cargo
+alias nyan=yarn
+alias ayran=yarn
+alias doch="sudo !!"
+
 alias vpn=expressvpn
 
 source ~/.profile
@@ -70,11 +75,15 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH=~/.local/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=~/src/golang/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/aur/fzf-extras/fzf-extras.sh ] && source ~/aur/fzf-extras/fzf-extras.sh
-[ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
+# [ -f ~/aur/fzf-extras/fzf-extras.sh ] && source ~/aur/fzf-extras/fzf-extras.sh
+# [ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
 
 export GOPATH=~/src/golang
+export CHROME_BIN=`which chromium`
+
+export PATH=$PATH:~/.gem/ruby/2.4.0/bin
