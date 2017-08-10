@@ -18,7 +18,6 @@ bindkey '^x^e' edit-command-line # like bash
 alias mpv="mpv --opengl-backend=wayland"
 
 alias e="nvim"
-alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
