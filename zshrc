@@ -58,6 +58,8 @@ alias please=sudo
 alias rm='rm -I'
 alias status="git status"
 
+alias open=xdg-open
+
 alias corgi=cargo
 alias vpn=expressvpn
 
@@ -70,6 +72,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH=~/.local/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH=~/src/golang/bin:$PATH
 
