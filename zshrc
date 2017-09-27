@@ -76,14 +76,20 @@ compinit
 # End of lines added by compinstall
 
 export PATH=~/.local/bin:$PATH
+
+# Rust
 export PATH=~/.cargo/bin:$PATH
+export CARGO_INCREMENTAL=1
+
+# Go
+export GOPATH=~/src/golang
 export PATH=~/src/golang/bin:$PATH
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/aur/fzf-extras/fzf-extras.sh ] && source ~/aur/fzf-extras/fzf-extras.sh
 [ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
 
-export GOPATH=~/src/golang
 export CHROME_BIN=`which chromium`
 
 export PATH=$PATH:~/.gem/ruby/2.4.0/bin
