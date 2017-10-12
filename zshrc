@@ -36,6 +36,10 @@ alias rebase="git rebase"
 alias reset="git reset"
 alias stash="git stash"
 alias st="git status"
+alias db="git branch -l | fzf | xargs git branch -d"
+alias cob="git branch -l | fzf | xargs git checkout"
+alias coba="git branch -la | fzf | xargs git checkout"
+alias fall="git fetch --all"
 alias ls=exa
 
 function pfo() {
