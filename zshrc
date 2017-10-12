@@ -80,17 +80,25 @@ compinit
 # End of lines added by compinstall
 
 export PATH=~/.local/bin:$PATH
+
+# Rust
 export PATH=~/.cargo/bin:$PATH
+export CARGO_INCREMENTAL=1
+
+# Go
+export GOPATH=~/src/golang
 export PATH=~/src/golang/bin:$PATH
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/aur/fzf-extras/fzf-extras.sh ] && source ~/aur/fzf-extras/fzf-extras.sh
 [ -f ~/aur/fzf-extras/fzf-extras.zsh ] && source ~/aur/fzf-extras/fzf-extras.zsh
 
-export GOPATH=~/src/golang
 export CHROME_BIN=`which chromium`
 
 export PATH=$PATH:~/.gem/ruby/2.4.0/bin
-export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:/home/tom/emsdk-portable:/home/tom/emsdk-portable/clang/fastcomp/build_incoming_64/bin:/home/tom/emsdk-portable/node/4.1.1_64bit/bin:/home/tom/emsdk-portable/emscripten/incoming
-export CARGO_INCREMENTAL=1
+
+# NPM
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$NPM_PACKAGES/bin:$PATH"
