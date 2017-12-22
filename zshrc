@@ -58,7 +58,7 @@ alias grep='grep --colour'
 alias ma=make
 alias mv='mv -i'
 alias please=sudo
-alias rm='rm -I'
+alias rm=trash
 alias status="git status"
 
 alias open=xdg-open
