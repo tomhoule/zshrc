@@ -17,8 +17,6 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line # like bash
 
-alias mpv="mpv --opengl-backend=wayland"
-
 alias e="${EDITOR}"
 
 alias vi="nvim"
@@ -37,7 +35,6 @@ alias pull="git pull"
 alias push="git push"
 alias rebase="git rebase"
 alias reset="git reset"
-alias stash="git stash"
 alias st="git status"
 alias db="git branch -l | fzf | xargs git branch -d"
 alias cob="git branch -l | fzf | xargs git checkout"
@@ -54,30 +51,13 @@ alias cp='cp -i'
 alias grep='grep --colour'
 alias mv='mv -i'
 alias rm=trash
-
 alias open=xdg-open
 
 alias corgi=cargo
-alias nyan=yarn
-alias ayran=yarn
-alias doch="sudo !!"
+alias yanni=yarn
 
 export LC_ALL=en_US.UTF-8
 
-# The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
 # Rust
 export PATH=~/.cargo/bin:$PATH
-export CARGO_INCREMENTAL=1
 export RUST_BACKTRACE=1
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# NPM
-export NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$NPM_PACKAGES/bin:$PATH"
