@@ -25,14 +25,23 @@ alias vim="nvim"
 alias k="kak"
 
 alias add="git add"
+alias checkout="git checkout"
+alias co="git checkout"
 alias commit="git commit -v"
+alias bl="git branch -l"
+alias branch="git branch"
 alias g=git
+alias pull="git pull"
+alias push="git push"
+alias rebase="git rebase"
 alias reset="git reset"
 alias st="git status"
 alias db="git branch -l | fzf | xargs git branch -d"
 alias cob="git branch -l | fzf | xargs git checkout"
 alias coba="git branch -la | fzf | xargs git checkout"
+
 alias ls=exa
+alias cat=bat
 
 alias pr="hub pull-request"
 
@@ -44,23 +53,16 @@ alias cp='cp -i'
 alias grep='grep --colour'
 alias mv='mv -i'
 # alias rm=trash
+alias open=xdg-open
+
 alias corgi=cargo
 alias corgo=cargo
 alias yanni=yarn
 
 export LC_ALL=en_US.UTF-8
 
-# The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-export PATH=~/.local/bin:$PATH
-
 # Rust
 export PATH=~/.cargo/bin:$PATH
-export CARGO_INCREMENTAL=1
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
