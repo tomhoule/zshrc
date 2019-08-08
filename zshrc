@@ -17,8 +17,6 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line # like bash
 
-alias mpv="mpv --opengl-backend=wayland"
-
 alias e="${EDITOR}"
 
 alias vi="nvim"
@@ -45,8 +43,9 @@ alias dcr="docker-compose run --rm"
 alias cp='cp -i'
 alias grep='grep --colour'
 alias mv='mv -i'
-alias rm=trash
+# alias rm=trash
 alias corgi=cargo
+alias corgo=cargo
 alias yanni=yarn
 
 export LC_ALL=en_US.UTF-8
@@ -69,11 +68,3 @@ export CARGO_INCREMENTAL=1
 # NPM
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
-
-# Krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-export VOLTA_HOME="$HOME/.volta"
-[ -s "$VOLTA_HOME/load.sh" ] && . "$VOLTA_HOME/load.sh"
-
-export PATH="$VOLTA_HOME/bin:$PATH"
